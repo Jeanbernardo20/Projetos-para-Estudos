@@ -12,7 +12,7 @@
         
         <form class="form-box">
             
-            <fieldset>
+            
                 <legend><span class="bold">Cadastro da unidade</span></legend>
 
             <div class="input-box">
@@ -26,7 +26,7 @@
             </div>
             <div class="input-box">
                 <input type="text" name="endereco" id="endereco" class="endereco">
-                <label for="endreco">Endreço</label>
+                <label for="endereco">Endreço</label>
             </div>
             <div class="input-box">
                 <input type="number" name="cep" id="cep" class="cep">
@@ -64,6 +64,7 @@
                     <option value="baixo">Baixo Acre</option>
                     <option value="purus">Tarauaca/Envira</option>
                     <option value="Jurua">Juruá</option>
+                </select>
             </div>
 
             <div class="input-box">
@@ -118,8 +119,95 @@
                 <label>
                     <input type="radio" name="gestão" value="ger_os">
                     Gerenciando por OSS (Organização Social de Saúde)
+                    <legend>Qual?</legend>
                 </label>
              
+            </div>
+
+            <div class="input-box">
+                <label>
+                    <legend>A unidada/serviço possui algum certificado, Premiação</legend>
+                    <input type="radio" name="certificado" value="Sim">
+                    Sim
+                    
+                </label>
+             
+            </div>
+
+            <div class="input-box">
+                <label>
+                    <input type="radio" name="certificado" value="Não">
+                    Não
+                    <legend>se, "Sim", quais?</legend>
+                </label>
+             
+            </div>
+
+            <div class="input-box">
+                <label>
+                    <legend>É unidade de referência?</legend>
+                    <input type="radio" name="certificado" value="Sim">
+                    Sim
+                    
+                </label>
+             
+            </div>
+
+            <div class="input-box">
+                <label>
+                    <input type="radio" name="certificado" value="Não">
+                    Não
+                    <legend>se, "Sim", para quais municipios?</legend>
+                </label>
+                         
+            </div>
+
+            <div class="input-box">
+               
+                <input type="radio" name="muni" id="acrel"> <label 
+                for="acrel"> Acrelândia </label>
+                <input type="radio" name="muni" id="assisb"> <label 
+                for="assisb"> Assi Brasil </label>
+                <input type="radio" name="muni" id="buja"> <label 
+                for="buja"> Bujari </label>
+                <input type="radio" name="muni" id="capi"> <label 
+                for="capi">Capixaba</label>
+                <input type="radio" name="muni" id="cruz"> <label 
+                for="cruz"> Cruzeiro do Sul </label>
+                <input type="radio" name="muni" id="epitac"> <label 
+                for="epitac"> Epitaciolândia</label>
+                <input type="radio" name="muni" id="feij"> <label 
+                for="feij"> Feijó </label>
+                <input type="radio" name="muni" id="jord"> <label 
+                for="jord">Jordão</label>
+                <input type="radio" name="muni" id="manc"> <label 
+                for="manc">Mancio Lima</label>
+                <input type="radio" name="muni" id="mano"> <label 
+                for="mano"> Manoel Urbano </label>
+                <input type="radio" name="muni" id="marech"> <label 
+                for="marech"> Marechal Thaumaturgo </label>
+                <input type="radio" name="muni" id="plac"> <label 
+                for="plac"> Plácido de Castro </label>
+                <input type="radio" name="muni" id="portac"> <label 
+                for="portac">Porto Acre</label>
+                <input type="radio" name="muni" id="portowa"> <label 
+                for="portowa">Porto Walter</label>
+                <input type="radio" name="muni" id="riob"> <label 
+                for="riob"> Rio Branco</label>
+                <input type="radio" name="muni" id="rodri"> <label 
+                for="rodri"> Rodrigues Alves </label>
+                <input type="radio" name="muni" id="santarosa"> <label 
+                for="santarosa">Santa Rosa do Purus</label>
+                <input type="radio" name="muni" id="senam"> <label 
+                for="senam">Sena Madureira</label>
+                <input type="radio" name="muni" id="Sengui"> <label 
+                for="Sengui">Senador Guiomard</label>
+                <input type="radio" name="muni" id="tar"> <label 
+                for="tar">Tarauacá</label>
+                <input type="radio" name="muni" id="xap"> <label 
+                for="xap">Xapuri</label>
+                    
+                          
             </div>
 
 
@@ -130,7 +218,11 @@
 
 
 
-            </fieldset>
+
+
+
+
+           
 
             
         </form>
