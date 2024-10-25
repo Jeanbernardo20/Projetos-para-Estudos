@@ -17,24 +17,32 @@ body{
     width: 80%;
     height: 80vh;
     display: flex;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.394);
 
 }
 
 .form{
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: #fff;
-    padding: 3rem;
+    padding: 5rem;
 }
 
-.form-header title{
-    margin-bottom: 3rem;
-    text-align: center;
+.form-header {
+    margin-bottom: 10rem;
+    display: flex;
     color:#fff;
+    justify-content: space-between;
 
+}
 
+.input-group{
+    display: flex;
+    height: 50%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
 }
