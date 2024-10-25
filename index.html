@@ -1,245 +1,300 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagnóstico Unidades</title>
-    <link rel="stylesheet" href="diagnostico_unidade/css/style.css">
-  
-</head>
-<body>
-    <div class="container">
-        
-        <form class="form-box">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diagnóstico Unidades</title>
+        <link rel="stylesheet" href="diagnostico_unidade/css/style.css">
+    
+    </head>
+    <body>
+        <div class="container">
             
-            <div class="title">
-                <legend><span class="bold">Cadastro da unidade</span></legend>
-            </div>
+            <form class="form">
+                
+                <div class="form-header">
+                    <div class="title">
+                        <h1><span class="bold">Cadastro da unidade</span></h1>
+                    </div>
+                    
+                </div>
 
-            <div class="input-box">
-                <label for="unidade de saude">Unidade de saúde</label>
-                <input type="text" name="unidade de saude" id="unidade de saude" class="uni-saude">
-                
-            </div>
+                <div class="input-box">
+                    <label for="unidade de saude">Unidade de saúde</label>
+                    <input type="text" name="un-saude" id="un-saude" required>
+                    
+                </div>
 
-            <div class="input-box">
-                <label for="cnes">CNES</label>
-                <input type="text" name="cnes" id="cnes" class="cnes">
-                
-            </div>
-            <div class="input-box">
-                <label for="endereco">Endreço</label>
-                <input type="text" name="endereco" id="endereco" class="endereco">
-                
-            </div>
-            <div class="input-box">
-                <label for="cep">CEP</label>
-                <input type="number" name="cep" id="cep" class="cep">
-                
-            </div>
+                <div class="input-group">
 
-            <div class="input-box">
-                <label for="municipios">Município</label>
-                <select id="municipio" name="municipio">
-                    <option value="acres">Acrelândia</option>
-                    <option value="assis">Assis Brasil</option>
-                    <option value="brasil">Brasiléia</option>
-                    <option value="bujari">Bujari</option>
-                    <option value="capixaba">Capixaba</option>
-                    <option value="cruzeiro">Cruzeiro do Sul</option>
-                    <option value="epitaciolandia">Epitaciolândia</option>
-                    <option value="feijao">Feijó</option>
-                    <option value="jordao">Jordão</option>
-                    <option value="manoel">Manoel Urbano</option>
-                    <option value="marechal">Marechal Thaumaturgo</option>
-                    <option value="plácido">Plácido de Castro</option>
-                    <option value="porto">Porto Acre</option>
-                    <option value="rio">Rio Branco</option>
-                    <option value="sena">Sena Madureira</option>
-                    <option value="senador">Senador Guiomard</option>
-                    <option value="tarauaca">Tarauacá</option>
-                    <option value="xapuri">Xapuri</option>
-                </select>
-            </div>
+                    <div class="input-box">
+                        <label for="cnes">CNES</label>
+                        <input type="number" name="cnes" id="cnes" required >
 
-            <div class="input-box">
-                <label for="reg-saude">Região de Saúde</label>
-                <select id="reg-saude" name="reg-saude">
-                    <option value="alto">Alto Acre</option>
-                    <option value="baixo">Baixo Acre</option>
-                    <option value="purus">Tarauaca/Envira</option>
-                    <option value="Jurua">Juruá</option>
-                </select>
-            </div>
+                    </div>
 
-            <div class="input-box">
-                <label for="uf">UF</label>
-                <input type="text" name="uf" id="uf" class="uf">
-                
-            </div>
+                    <div class="input-box">
+                        <label for="endereco">Endreço</label>
+                        <input type="text" name="end" id="end" required>
 
-            <div class="input-box">
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" class="email">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cep">CEP</label>
+                        <input type="number" name="cep" id="cep" placeholder="xxx - xxx" required>
+
+                    </div>
+
+                    <div class="input-box">
+                        <label for="municipios">Município</label>
+                        <select id="municipio" name="municipio">
+                            <option value="acres">Acrelândia</option>
+                            <option value="assis">Assis Brasil</option>
+                            <option value="brasil">Brasiléia</option>
+                            <option value="bujari">Bujari</option>
+                            <option value="capixaba">Capixaba</option>
+                            <option value="cruzeiro">Cruzeiro do Sul</option>
+                            <option value="epitaciolandia">Epitaciolândia</option>
+                            <option value="feijao">Feijó</option>
+                            <option value="jordao">Jordão</option>
+                            <option value="manoel">Manoel Urbano</option>
+                            <option value="marechal">Marechal Thaumaturgo</option>
+                            <option value="plácido">Plácido de Castro</option>
+                            <option value="porto">Porto Acre</option>
+                            <option value="rio">Rio Branco</option >
+                            <option value="sena">Sena Madureira</option>
+                            <option value="senador">Senador Guiomard</option>
+                            <option value="tarauaca">Tarauacá</option>
+                            <option value="xapuri">Xapuri</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="reg-saude">Região de Saúde</label>
+                        <select id="reg-saude" name="reg-saude">
+                            <option value="alto">Alto Acre</option>
+                            <option value="baixo">Baixo Acre</option>
+                            <option value="purus">Tarauaca/Envira</option>
+                            <option value="Jurua">Juruá</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                    <label for="uf">UF</label>
+                    <input type="text" name="uf" id="uf" class="uf">
+
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+
+                    </div>
+
+                    <div class="input-box">
+                        <label for="tel">Telefone</label>
+                        <input type="tel" name="tel" id="tel" class="tel">
+
+                    </div>
                 
-            </div>
-            <div class="input-box">
-                <label for="tel">Telefone</label>
-                <input type="tel" name="tel" id="tel" class="tel">
+                </div> 
+
+                <div class="radio-group">
+
+                    <div class="gestao-title">
+                        <legend>Gestão</legend>
+                    </div>
+                    
+                    <div class="gestao-group">
+                        <div class="gestao-input">
+                            <input type="radio" id="municipal" name="gestao">
+                            <label for="municipal">Municipal</label>
+                        </div>
+
+                        <div class="gestao-input">
+                            <input type="radio" id="estadual" name="gestao">
+                            <label for="estadual">Estadual</label>
+                        </div>
+                        
+                    </div>
+
+                    <div class="perfil-unid-title">
+                        <legend>Perfil da Unidade</legend>
+                    </div>
+                    
+                    <div class="perfil-unid-group">
+                        <div class="perfil-uni-input">
+                            <input type="radio" id="adireta" name="perfil">
+                            <label for="adireta">Admistração Direta</label>
+                        </div>
+
+                        <div class="perfil-uni-input">
+                            <input type="radio" id="filant" name="perfil">
+                            <label for="filant">Filantrópica</label>
+                        </div>
+
+                        <div class="perfil-uni-input">
+                            <input type="radio" id="fundacao" name="perfil">
+                            <label for="fundacao">Fundação</label>
+                        </div>
+
+                        <div class="perfil-uni-input">
+                            <input type="radio" id="gerenciado" name="perfil">
+                            <label for="gerenciado">Gerênciado por OS (Organização Sociais de Saúde)</label>
+                            <div class="perfil-uni-input">
+                                <label for="quais">Quais?</label>
+                                <input type="text" id="quais" name="perfil">
+                            </div>  
+                        </div>
+                    
+                    </div>
+
+                    <div class="caract-unid-title">
+                        <legend>Caracteristica da Unidade</legend>
+                    </div>
+                    
+                    <div class="caract-unid-group">
+                        <div class="caract-unid-group">
+                            <input type="radio" id="hospe" name="caracteristica">
+                            <label for="hospe">Hospital Especializado</label>
+                        </div>
+
+                        <div class="caract-unid-group">
+                            <input type="radio" id="hospgeral" name="caracteristica">
+                            <label for="hospgeral">Hospital Geral</label>
+                        </div>
+
+                        <div class="caract-unid-group">
+                            <input type="radio" id="hospmat" name="caracteristica">
+                            <label for="hospmat">Hospital com Maternidade</label>
+                        </div>
+
+                        <div class="caract-unid-group">
+                            <input type="radio" id="hospgerional" name="caracteristica">
+                            <label for="hospgerional">Hospital Regional</label>
+                        </div>
+
+                        <div class="caract-unid-group">
+                            <input type="radio" id="unitatend" name="caracteristica">
+                            <label for="unitatend">Unidade de Atendimento</label>
+                        </div>
+
+                        <div class="caract-unid-group">
+                            <input type="radio" id="unitatend" name="caracteristica">
+                            <label for="unitatend">Unidade de Atendimento (UPA)</label>
+                        </div>
+
+                        <div class="caract-unid-group">
+                            <input type="radio" id="labo" name="caracteristica">
+                            <label for="labo">Laboratório</label>
+                        </div>
+
+                        <div class="caract-unid-group">
+                            <input type="radio" id="centesp" name="caracteristica">
+                            <label for="centesp">Centro Especialiado</label>
+                        </div>
+
+                        <div class="caract-unid-group">
+                            <input type="radio" id="outro" name="caracteristica">
+                            <label for="outro">Outro</label>
+                        </div>
+                    
+                    
+                    </div>
+
+                    <div class="cert-unid-title">
+                        <legend>A Unidade/Serviço possui alguma certificação?</legend>
+                    </div>
+                    
+                    <div class="cert-unid-group">
+                        <div class="cert-unid-group">
+                            <input type="radio" id="sim" name="certificado">
+                            <label for="sim">Sim</label>
+                        </div>
+
+                        <div class="cert-unid-group">
+                            <input type="radio" id="nao" name="certificado">
+                            <label for="nao">Não</label>
+                            <div class="se-sim">
+                                <label for="tem">Se "Sim",Quais?</label>
+                                <input type="text" id="tem" name="certificado">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="ref-unid-title">
+                        <legend>E Unidade de Referência?</legend>
+                    </div>
+
+                    <div class="ref-unid-group">
+
+                        <div class="ref-unid-group">
+                            <input type="radio" id="ref-sim" name="referencia">
+                            <label for="ref-sim">Sim</label>
+                        </div>
+
+                        <div class="ref-unid-group">
+                            <input type="radio" id="ref-nao" name="referencia">
+                            <label for="ref-nao">Não</label>
+
+                            <div class="input_cidades">
+                                <label for="ref">Se "Sim", para quais municípios</label>
+                                
+                                <input type="checkbox" id="acrel" name="muni">
+                                <label for="acrel">Acrelândia</label> 
+                                <input type="checkbox" id="assis" name="muni">
+                                <label for="assis">Assis Brasil</label>
+                                <input type="checkbox" id="buja" name="muni">
+                                <label for="buja">Bujari</label>
+                                <input type="checkbox" id="cap" name="muni">
+                                <label for="cap">Capixaba</label> 
+                                <input type="checkbox" id="cruz" name="muni">
+                                <label for="cruz">Cruzeiro do Sul</label>
+                                <input type="checkbox" id="Epi" name="muni">
+                                <label for="Epi">Epitaciolândia</label>
+                                <input type="checkbox" id="feij" name="muni">
+                                <label for="feij">Feijó</label>
+                                <input type="checkbox" id="jord" name="muni">
+                                <label for="jord">Jordão</label>  
+                                <input type="checkbox" id="manclima" name="muni">
+                                <label for="manclima">Mancio Lima</label>
+                                <input type="checkbox" id="manuel" name="muni">
+                                <label for="manuel">Manuel Urbano</label>
+                                <input type="checkbox" id="Marech" name="muni">
+                                <label for="Marech">Marechal Thaumaturgo</label>
+                                <input type="checkbox" id="Placido" name="muni">
+                                <label for="Placido">Plácido de Castro</label>
+                                <input type="checkbox" id="Portac" name="muni">
+                                <label for="Portac">Porto Acre</label>
+                                <input type="checkbox" id="Porto Walter" name="muni">
+                                <label for="Porto Walter">Porto Walter</label>
+                                <input type="checkbox" id="Rio Branco" name="muni">
+                                <label for="Rio Branco">Rio Branco</label> 
+                                <input type="checkbox" id="Rodral" name="muni">
+                                <label for="Rodral">Rodrigues Alves</label>
+                                <input type="checkbox" id="santarosa" name="muni">
+                                <label for="santarosa">Santa Rosa do Purus</label>
+                                <input type="checkbox" id="sena" name="muni">
+                                <label for="sena">Sena Madureira</label>
+                                <input type="checkbox" id="quinari" name="muni">
+                                <label for="quinari">Senador Guimard</label>
+                                <input type="checkbox" id="tarauc" name="muni">
+                                <label for="tarauc">Tarauacá</label>
+                                <input type="checkbox" id="xap" name="muni">
+                                <label for="xap">Xapuri</label>                     
                 
+                            </div>    
+                            
+                        </div>    
+                        
+                    </div>
             
-            <div class="input-box">
-                <legend>Gestão</legend>
-                <label>
-                    <input type="radio" name="gestão" value="estadual">
-                    Estadual
-                </label>
-            </div>
-            <div class="input-box">
-                <label>
-                    <input type="radio" name="gestão" value="municipal">
-                    Municipal
-                </label>
-            </div>
-            <div class="input-box">
-                <legend>Perfil da Unidade</legend>
-                <label>
-                    <input type="radio" name="gestão" value="adireta">
-                    Admistração Direta
-                </label>
-            </div>    
-            <div class="input-box">
-                <label>
-                    <input type="radio" name="gestão" value="filant">
-                    Filantrópica
-                </label>
-             
-            </div>
-            <div class="input-box">
-                <label>
-                    <input type="radio" name="gestão" value="fund">
-                    Fundação
-                </label>
-             
-            </div>
-
-            <div class="input-box">
-                <label>
-                    <input type="radio" name="gestão" value="ger_os">
-                    Gerenciando por OSS (Organização Social de Saúde)
-                    <legend>Qual?</legend>
-                </label>
-             
-            </div>
-
-            <div class="input-box">
-                <label>
-                    <legend>A unidada/serviço possui algum certificado, Premiação</legend>
-                    <input type="radio" name="certificado" value="Sim">
-                    Sim
+                                         
+                </div>             
                     
-                </label>
-             
-            </div>
+            </form>
 
-            <div class="input-box">
-                <label>
-                    <input type="radio" name="certificado" value="Não">
-                    Não
-                    <legend>se, "Sim", quais?</legend>
-                </label>
-             
-            </div>
-
-            <div class="input-box">
-                <label>
-                    <legend>É unidade de referência?</legend>
-                    <input type="radio" name="certificado" value="Sim">
-                    Sim
-                    
-                </label>
-             
-            </div>
-
-            <div class="input-box">
-                <label>
-                    <input type="radio" name="certificado" value="Não">
-                    Não
-                    <legend>se, "Sim", para quais municipios?</legend>
-                </label>
-                         
-            </div>
-
-            <div class="input-box">
-               
-                <input type="radio" name="muni" id="acrel"> <label 
-                for="acrel"> Acrelândia </label>
-                <input type="radio" name="muni" id="assisb"> <label 
-                for="assisb"> Assi Brasil </label>
-                <input type="radio" name="muni" id="buja"> <label 
-                for="buja"> Bujari </label>
-                <input type="radio" name="muni" id="capi"> <label 
-                for="capi">Capixaba</label>
-                <input type="radio" name="muni" id="cruz"> <label 
-                for="cruz"> Cruzeiro do Sul </label>
-                <input type="radio" name="muni" id="epitac"> <label 
-                for="epitac"> Epitaciolândia</label>
-                <input type="radio" name="muni" id="feij"> <label 
-                for="feij"> Feijó </label>
-                <input type="radio" name="muni" id="jord"> <label 
-                for="jord">Jordão</label>
-                <input type="radio" name="muni" id="manc"> <label 
-                for="manc">Mancio Lima</label>
-                <input type="radio" name="muni" id="mano"> <label 
-                for="mano"> Manoel Urbano </label>
-                <input type="radio" name="muni" id="marech"> <label 
-                for="marech"> Marechal Thaumaturgo </label>
-                <input type="radio" name="muni" id="plac"> <label 
-                for="plac"> Plácido de Castro </label>
-                <input type="radio" name="muni" id="portac"> <label 
-                for="portac">Porto Acre</label>
-                <input type="radio" name="muni" id="portowa"> <label 
-                for="portowa">Porto Walter</label>
-                <input type="radio" name="muni" id="riob"> <label 
-                for="riob"> Rio Branco</label>
-                <input type="radio" name="muni" id="rodri"> <label 
-                for="rodri"> Rodrigues Alves </label>
-                <input type="radio" name="muni" id="santarosa"> <label 
-                for="santarosa">Santa Rosa do Purus</label>
-                <input type="radio" name="muni" id="senam"> <label 
-                for="senam">Sena Madureira</label>
-                <input type="radio" name="muni" id="Sengui"> <label 
-                for="Sengui">Senador Guiomard</label>
-                <input type="radio" name="muni" id="tar"> <label 
-                for="tar">Tarauacá</label>
-                <input type="radio" name="muni" id="xap"> <label 
-                for="xap">Xapuri</label>
-                    
-                          
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-           
-
-            
-        </form>
-
-
-
-
-
-
-    </div>
-</body>
+        </div>
+    </body>
 </html>
